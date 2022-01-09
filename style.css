@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #192440;
+    --secondary-color: #00ffad;
+    --tertiary-color: #292b2c;
+    --quaternary-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+#banner {
+    background-image: url(./images/banner-bg-image.jpg);
+}
+
+#contact {
+    background-image: url(./images/contact-bg-image.jpg);
+}
+
+#banner, #contact {
+    padding: 6.4rem 0;
+    color: var(--quaternary-color);
+}
+
+#banner header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner p {
+    font-size: 2rem;
+    margin: 2.4rem 0;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+#banner header a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+    font-size: 2rem;
+}
+
+.protection {
+    text-align: center;
+}
+
+.protection h2 {
+    margin: 4.8rem 0;
+}
+
+.protection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.protection .cards .card {
+    flex: 1;
+}
+
+.protection .cards h4 {
+    margin-bottom: 0.8rem;
+}
+
+.features {
+    margin-top: 7rem;
+}
+
+.features .feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.features .feature-2-wrapper {
+    background-color: #00FFAD;
+}
+
+.features .feature-1-wrapper {
+    background-image: linear-gradient(to bottom right,#ffffff 50%,#00FFAD 50%);
+}
+
+.features .feature img {
+    max-width: 50%;
+}
+
+@media not screen and (min-width: 992px) {
+    .features .feature {
+        flex-direction: column;
+    }
+    .features .feature-1-wrapper {
+        background: var(--secondary-color);
+    }
+    .features .feature-2 img {
+        order: 1;
+    }
+}
+
+@media not screen and (min-width: 576px) {
+    .features .feature img {
+        max-width: 80%;
+    }
+}
+
+.pricing {
+    text-align: center;
+}
+
+.pricing > h2  {
+    margin: 4.8rem 0;
+}
+
+.pricing .cards {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing .cards .card {
+    border-radius: 0.5rem;
+    padding: 2.4rem 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    background: lightgray;
+}
+
+.pricing .cards .card.dark {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.pricing .cards .card p  {
+    padding: 0.5rem 0;
+}
+
+.pricing .cards .card p span  {
+    font-size: 9rem;
+}
+
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4.8rem 0;
+}
+
+#contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+#contact .contact-info, #contact .contact-form {
+    flex-grow: 1;
+}
+
+#contact .list-unstyled {
+    margin-top: 2.5rem;
+}
+
+#contact .list-unstyled li {
+    padding: 0.4rem 0;
+}
+
+#contact form .first-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 3rem;
+}
+
+#contact form .first-row .form-group {
+    flex-grow: 1;
+}
+
+#contact form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.6rem;
+}
+
+#contact form input, #contact form textarea {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--quaternary-color);
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    outline: none;
+}
+
+#contact form label {
+    color: var(--secondary-color);
+}
+
+footer {
+    padding: 3.2rem 4.8rem;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+@media not all and (min-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+
+footer #social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+footer #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--quaternary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 7.2rem;
+    margin: 4.8rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+p, li, label {
+    font-size: 1.6rem;
+}
+
+@media not all and (min-width: 576px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+
+.list-unstyled {
+    list-style: none;
+}
+
+.btn {
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 1.2rem 3rem;
+    margin: 2.4rem 0;
+    font-size: 1.6rem;
+    border-radius: 2.2rem;
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
